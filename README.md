@@ -1,0 +1,1 @@
+# QA-trainee-assignment-spring-2025-skarlygina
