@@ -102,7 +102,7 @@
 {
   "sellerId": 567289,
   "name": "Next Pen",
-  "price": -1500,
+  "price": 1500,
   "statistics": {
     "likes": -20,
     "viewCount": -300,
@@ -120,11 +120,11 @@
 ```json
 {
   "sellerId": 567289,
-  "price": -1500,
+  "price": 1500,
   "statistics": {
-    "likes": -20,
-    "viewCount": -300,
-    "contacts": -5
+    "likes": 20,
+    "viewCount": 300,
+    "contacts": 5
   }
 }
 ```
