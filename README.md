@@ -26,4 +26,17 @@
     ├── GET.js
     └── POST.js
 ```
- 
+### Инструкция по запуску тестов:
+Склонируйте репозиторий:
+```
+git clone https://github.com/maryskar/QA-trainee-assignment-spring-2025-skarlygina.git
+cd QA-trainee-assignment-spring-2025-skarlygina/Task2
+```
+Установите зависимости:
+```
+npm install
+```
+Запустите тесты:
+```
+npm test
+```
