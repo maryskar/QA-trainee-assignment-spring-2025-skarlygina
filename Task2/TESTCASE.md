@@ -95,6 +95,42 @@
 1. Status Code: `200 OK`
 2. Тело ответа содержит поля со статусом сохранения, id.
 
+### {#TC-POST-006}: Ошибка валидации (отрицательная статистика)  
+- **Запрос:** `POST /api/1/item`   
+- **Тело (application/json) с отрицательной статистикой:**  
+```json
+{
+  "sellerId": 567289,
+  "name": "Next Pen",
+  "price": -1500,
+  "statistics": {
+    "likes": -20,
+    "viewCount": -300,
+    "contacts": -5
+  }
+}
+```
+- **Ожидаемый результат:**  
+1. Status Code: `400 Bad Request`
+2. Сообщение об ошибке валидации цены
+
+### {#TC-POST-007}: Ошибка валидации (сохранение объявления без имени)  
+- **Запрос:** `POST /api/1/item`   
+- **Тело (application/json) без имени:**  
+```json
+{
+  "sellerId": 567289,
+  "price": -1500,
+  "statistics": {
+    "likes": -20,
+    "viewCount": -300,
+    "contacts": -5
+  }
+}
+```
+- **Ожидаемый результат:**  
+1. Status Code: `400 Bad Request`
+2. Сообщение об ошибке валидации цены
 ---
 # GET
 ## GET /api/1/item
