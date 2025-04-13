@@ -58,6 +58,7 @@ describe('GET - Получить объявление по id', () => {
 
 describe('GET - Получить статистику по id', () => {
     it('TC-GET-004: Success response GET statistics by id (200)', async () => {
+        // 1. Создаем тестовое объявление
         const create_data = {
             "sellerId": 783125,
             "name": "Amazing Pen",
@@ -68,27 +69,27 @@ describe('GET - Получить статистику по id', () => {
                 "contacts": 90
             }
         };
+        
         const create_response = await axios.post(`${baseUrl}/api/1/item`, create_data);
         const created_id = create_response.data.status.split('- ')[1];
-    
- 
-        const get_response = await axios.get(`${baseUrl}/api/1/item/${created_id}`);
+        const get_response = await axios.get(`${baseUrl}/api/1/statistic/${created_id}`);
+        
         expect(get_response.status).to.equal(200);
         expect(Array.isArray(get_response.data)).to.be.true;
-        expect(get_response.data[0].id).to.equal(created_id);
+        expect(get_response.data).to.have.lengthOf(1);
 
         const expectedStats = {
             likes: 5421,
             viewCount: 56723,
             contacts: 90
         };
-        
-        expect(get_response.data[0].statistics).to.deep.include(expectedStats);
-        expect(get_response.data[0].statistics).to.have.all.keys(
+        expect(get_response.data[0]).to.deep.include(expectedStats);
+        expect(get_response.data[0]).to.have.all.keys(
             'likes',
             'viewCount',
             'contacts'
         );
+
     });
 });
 

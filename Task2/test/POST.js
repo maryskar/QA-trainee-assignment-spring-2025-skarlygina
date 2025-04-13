@@ -74,4 +74,18 @@ describe('POST - Сохранить объявление', () => {
             }
         }
     });
+    it('TC-POST-004: Empty body request (400)', async () => {
+        try {
+            await axios.post(`${baseUrl}/api/1/item`, {}, {
+                headers: { 'Content-Type': 'application/json' }
+            });
+            throw new Error('Expected 400 error');
+        } catch (error) {
+            if (error.response) {
+                expect(error.response.status).to.equal(400);
+            } else {
+                throw error;
+            }
+        }
+    });
 });
