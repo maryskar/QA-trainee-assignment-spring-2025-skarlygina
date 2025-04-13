@@ -25,7 +25,7 @@ Content-Type: application/json
     "contacts": 5
   }
 }
-```json
+```
 - Ожидаемый результат:  
 1. Status Code: 200 OK
 2. Тело ответа содержит поле status с ID созданного объявления
