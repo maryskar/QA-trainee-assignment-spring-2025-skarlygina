@@ -14,6 +14,7 @@
 
 Структура моего решения состоит из следующих файлов:
 [QA-trainee-assignment-spring-2025-skarlygina\Task2](Task2/)
+```
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
@@ -24,5 +25,5 @@
     ├── DELETE.js
     ├── GET.js
     └── POST.js
-
+```
  
