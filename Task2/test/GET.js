@@ -3,7 +3,7 @@ const axios = require('axios');
 const { expect } = require('chai');
 const { baseUrl } = require('./config');
 
-describe('GET - Получить объявление по id', () => {
+describe('GET /api/1/item - Получить объявление по id', () => {
     it('TC-GET-001: Success response GET id (200)', async () => {
         const create_data = {
             "sellerId": 783925,
@@ -56,7 +56,7 @@ describe('GET - Получить объявление по id', () => {
 });
 
 
-describe('GET - Получить статистику по id', () => {
+describe('GET /api/1/statistic - Получить статистику по id', () => {
     it('TC-GET-004: Success response GET statistics by id (200)', async () => {
         // 1. Создаем тестовое объявление
         const create_data = {
@@ -93,7 +93,7 @@ describe('GET - Получить статистику по id', () => {
     });
 });
 
-describe('GET - Получить объявления по sellerID', () => {
+describe('GET /api/1/item - Получить объявления по sellerID', () => {
     const testSellerId = 783925;
     const nonExistentSellerId = 567898;
     const testItemIds = [ "cb43dc61-82cd-42d8-b372-0ed13f391723", "d8afb350-63da-48bc-a475-84829739fd6d", "c219bfa6-6c0a-4d73-923f-4bbd7d7d7487"];
@@ -128,7 +128,7 @@ describe('GET - Получить объявления по sellerID', () => {
 });
 
 
-describe('GET - Получить статистику по объявлению id', () => {
+describe('GET /api/2/statistic - Получить статистику по объявлению id', () => {
     
     it('TC-GET-007: Success response GET statistics by id (200)', async () => {
         const create_data = {
