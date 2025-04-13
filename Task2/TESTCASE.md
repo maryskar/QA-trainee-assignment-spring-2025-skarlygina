@@ -102,7 +102,7 @@
   1. Status Code: 404 Not Found
 ---
 
-## GET /api/1/statistics
+## GET /api/1/statistic
 ### TC-GET-004: Успешное получение объявления по id
 - Запрос: GET /api/1/statistic/{{id}}  
 - Предусловие:
@@ -110,9 +110,9 @@
   2. Объявление имеет статистику с полями:
    ```json
    {
-     "likes": number,
-     "viewCount": number,
-     "contacts": number
+     "likes": 5421,
+     "viewCount": 56723,
+     "contacts": 90
    }
    ```
 - Ожидаемый результат:
@@ -121,9 +121,9 @@
   ```json
   [
     {
-      "likes": number,
-      "viewCount": number,
-      "contacts": number
+      "likes": 5421,
+      "viewCount": 56723,
+      "contacts": 90
     }
   ]
   ```
@@ -153,9 +153,9 @@
   2. Объявление имеет статистику с полями:
    ```json
    {
-     "likes": number1,
-     "viewCount": number2,
-     "contacts": number3
+     "likes": 5421,
+     "viewCount": 56723,
+     "contacts": 90
    }
    ```
 - Ожидаемый результат:
@@ -164,9 +164,9 @@
   ```json
   [
     {
-      "likes": number1,
-      "viewCount": number2,
-      "contacts": number3
+      "likes": 5421,
+      "viewCount": 56723,
+      "contacts": 90
     }
   ]
   ```
