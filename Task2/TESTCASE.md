@@ -2,8 +2,7 @@
 
 ## Содержание
 1. [POST /api/1/item](#post-api1item)
-2. [GET /api/1/item](#get-api1item)
-3. [GET /api/2/statistic](#get-api2statistic)
+2. [GET](#get-api1item)
 4. [DELETE /api/2/item](#delete-api2item)
 
 ---
@@ -69,6 +68,7 @@
 2. Сообщение об ошибке валидации sellerID
 
 ---
+# GET
 ## GET /api/1/item
 ### TC-GET-001: Успешное получение объявления по id
 - Запрос: GET /api/1/item/{{id}}  
