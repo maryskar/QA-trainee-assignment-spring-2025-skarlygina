@@ -11,7 +11,7 @@
 
 ### TC-POST-001: Успешное создание объявления  
 - Запрос: POST /api/1/item   
-- Тело (application/json):  
+- Тело (application/json) с валидными данными:  
 ```json
 {
   "sellerId": 345624,
@@ -31,7 +31,7 @@
 
 ### TC-POST-002: Ошибка валидации (отрицательная цена)  
 - Запрос: POST /api/1/item   
-- Тело (application/json):  
+- Тело (application/json) с отрицательным полем price:  
 ```json
 {
   "sellerId": 567289,
@@ -50,7 +50,7 @@
 
 ### TC-POST-003: Ошибка валидации (недопустимый sellerID)  
 - Запрос: POST /api/1/item   
-- Тело (application/json):  
+- Тело (application/json) с sellerID, не входящим в [111111, 999999]:  
 ```json
 {
   "sellerId": 0,
