@@ -46,4 +46,4 @@ npm install
 npm test
 ```
 
-### Подробнее с выполнением задания можно ознакомиться в файлах [Task2/BUGS.md](Task2/BUGS.md) и [Task2/TESTCASE.md](Task2/TESTCASE.md).
+### Подробнее с выполнением задания можно ознакомиться в файлах [Task2/TESTCASE.md](Task2/TESTCASE.md) и [Task2/BUGS.md](Task2/BUGS.md).
