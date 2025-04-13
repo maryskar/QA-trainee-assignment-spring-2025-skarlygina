@@ -32,7 +32,7 @@
     └── POST.js
 ```
 ### Инструкция по запуску тестов:
-Склонируйте репозиторий:
+Склонируйте репозиторий и перейдите в папку `Task2`:
 ```
 git clone https://github.com/maryskar/QA-trainee-assignment-spring-2025-skarlygina.git
 cd QA-trainee-assignment-spring-2025-skarlygina/Task2
