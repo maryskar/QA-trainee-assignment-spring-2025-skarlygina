@@ -11,9 +11,8 @@
 ## POST /api/1/item  
 
 ### TC-POST-001: Успешное создание объявления  
-- Запрос: POST /api/1/item  
-Content-Type: application/json  
-- Тело:  
+- Запрос: POST /api/1/item   
+- Тело (application/json):  
 ```json
 {
   "sellerId": 345624,
